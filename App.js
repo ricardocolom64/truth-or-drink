@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { NativeBaseProvider, VStack, Text, Box, HStack, Button, Spacer, Center, ArrowForwardIcon, ArrowBackIcon, Divider, useToast, IconButton, InfoIcon, InfoOutlineIcon } from 'native-base';
+import { NativeBaseProvider, VStack, Text, Box, HStack, Button, Spacer, Center, ArrowForwardIcon, ArrowBackIcon, Divider, IconButton, InfoIcon, InfoOutlineIcon } from 'native-base';
 import { StyleSheet, View, Image } from 'react-native';
 
 import NativeConstants from 'expo-constants';
@@ -285,7 +285,7 @@ export default function App() {
               </Button>
               <Spacer />
               <Button size="xs" p="2" px="8" colorScheme="green" shadow={4} onPress={() => {
-                handleShuffle(); toast.show({ description: "asdsd", placement: "bottom" })
+                handleShuffle()
               }}>
                 <Text fontWeight={"extrabold"} color="white">SHUFFLE</Text>
               </Button>
